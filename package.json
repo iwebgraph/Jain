@@ -2,6 +2,7 @@
   "name": "JainApp",
   "version": "0.0.1",
   "author": "Ionic Framework",
+  "main": "server.js",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
@@ -30,7 +31,14 @@
     "core-js": "^2.5.4",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.9.1",
+    "@hapi/joi": "^15.1.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.15",
+    "mysql": "^2.17.1",
+    "underscore": "^1.9.1"
   },
   "devDependencies": {
     "@angular-devkit/architect": "~0.801.2",

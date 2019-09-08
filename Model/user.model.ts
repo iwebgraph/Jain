@@ -1,0 +1,23 @@
+export class Record {
+  public user_id : number;
+  public parent_id : number;
+  public first_name : String;
+  public middle_name : String;
+  public last_name : String;
+  public gender : String;
+  public dob_date : String;
+  public aniversary_date : String;
+  public blood_group : String;
+  public education : String;
+  public business_detail : String;
+  public mobile_number : String;
+  public email : String;
+  public address : String;
+  public proof_type : String;
+  public proof_id : String;
+  public password : String;
+  public created_date : String;
+  public modify_date : String;
+  public created_by : String;
+  public modify_by : String;
+}
