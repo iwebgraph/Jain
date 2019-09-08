@@ -1,0 +1,7 @@
+{
+  "name": "JainApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
