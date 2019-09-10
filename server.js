@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const jwt_decode = require('jwt-decode');
 const connection = require("./database");
 const login = require("./router/login");
+const user = require("./router/user");
 const register = require("./router/register");
 const _ = require('underscore');
 
@@ -29,6 +30,7 @@ app.use(express.static("www"));
 app.use(express.json());
 app.use('/login',login);
 app.use('/register',register);
+app.use('/user',user);
 
 app.listen(process.env.PORT || 3000, () => {
     console.log("server started");
