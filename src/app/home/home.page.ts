@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {  MenuController, NavController } from '@ionic/angular'; 
 import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 
 @Component({
@@ -13,7 +14,11 @@ import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 export class HomePage {
   currentImage: any;
 
-  constructor(private camera: Camera) { }
+  constructor(private camera: Camera, public menuCtrl: MenuController) { }
+
+  ionViewWillEnter() {
+    this.menuCtrl.enable(true);
+  }
 
   takePicture() {
     const options: CameraOptions = {
